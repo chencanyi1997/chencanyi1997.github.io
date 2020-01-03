@@ -75,6 +75,14 @@
     </item>
     
     <item>
+      <title>add draft</title>
+      <link>/post/add-draft/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/add-draft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>test draft</title>
       <link>/post/test-draft/</link>
       <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
