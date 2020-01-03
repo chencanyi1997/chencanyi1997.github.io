@@ -5,7 +5,7 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 03 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
@@ -13,16 +13,29 @@
     </image>
     
     <item>
-      <title>test Rmd</title>
-      <link>/post/test-rmd/</link>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/post/test-rmd/</guid>
+      <title>test draft</title>
+      <link>/post/test-draft/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/test-draft/</guid>
       <description>
 
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#section&#34;&gt;1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#section-1&#34;&gt;1.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#section-2&#34;&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x &amp;lt;- 1:10
-plot(x,sin(x))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../post/2019-12-30-test-rmd_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;section&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;section-1&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1.2&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;section-2&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;2&lt;/h2&gt;
+&lt;/div&gt;
 </description>
     </item>
     
