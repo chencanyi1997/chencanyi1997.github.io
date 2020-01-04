@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog | Chen Canyi's blog</title><link>/categories/blog/</link><atom:link href="/categories/blog/index.xml" rel="self" type="application/rss+xml"/><description>blog</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 04 Jan 2020 00:00:00 +0000</lastBuildDate><image><url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url><title>blog</title><link>/categories/blog/</link></image><item><title>Intro to make</title><link>/post/intro-to-make/</link><pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate><guid>/post/intro-to-make/</guid><description>&lt;h2 id="a-real-example">A real example&lt;/h2>
+&lt;h2 id="references">References&lt;/h2>
+&lt;ul>
+&lt;li>(A minimal tutorial on make)[http://kbroman.org/minimal_make/]&lt;/li>
+&lt;li>(A portable Makefile for continuous delivery with Hugo and GitHub Pages)[https://victoria.dev/blog/a-portable-makefile-for-continuous-delivery-with-hugo-and-github-pages/]&lt;/li>
+&lt;/ul></description></item><item><title>Writing content with Markdown, LaTeX, and Shortcodes</title><link>/post/writing-content-with-markdown-latex-and-shortcodes/</link><pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate><guid>/post/writing-content-with-markdown-latex-and-shortcodes/</guid><description>
+&lt;p>&lt;h2>Table of Contents&lt;/h2>
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>
+&lt;ul>
+&lt;li>&lt;a href="#markdown">Markdown&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#todo">Todo&lt;/a>&lt;/li>
+&lt;/ul>&lt;/li>
+&lt;li>&lt;a href="#rmarkdown">Rmarkdown&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#references">References&lt;/a>&lt;/li>
+&lt;/ul>&lt;/li>
+&lt;/ul>
+&lt;/nav>&lt;/p>
+&lt;h2 id="markdown">Markdown&lt;/h2>
+&lt;h3 id="todo">Todo&lt;/h3>
+&lt;pre>&lt;code class="language-markdown">- [x] Write math example
+- [x] Write diagram example
+- [ ] Do something else
+&lt;/code>&lt;/pre>
+&lt;ul class="task-list">
+&lt;li>&lt;label>&lt;input type="checkbox" checked disabled class="task-list-item"> Write math example&lt;/label>&lt;/li>
+&lt;li>&lt;label>&lt;input type="checkbox" checked disabled class="task-list-item"> Write diagram example&lt;/label>&lt;/li>
+&lt;li>&lt;label>&lt;input type="checkbox" disabled class="task-list-item"> Do something else&lt;/label>&lt;/li>
+&lt;/ul>
+&lt;h2 id="rmarkdown">Rmarkdown&lt;/h2>
+&lt;pre>&lt;code class="language-r">x &amp;lt;- 1:5
+plot(x,sin(x))
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="/post/2020-01-03-writing-content-with-markdown-latex-and-shortcodes_files/figure-html/unnamed-chunk-1-1.png" width="672" />&lt;/p>
+&lt;h2 id="references">References&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">https://sourcethemes.com/academic/docs/writing-markdown-latex&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
