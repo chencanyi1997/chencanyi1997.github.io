@@ -104,6 +104,10 @@ git submodule update --init --recursive
 todo
 ---&gt;
 &lt;h2 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd ~/.vim/bundle/YouCompleteMe/third_party/ycmd/clang_archives
+mv libclang-8.0.0-x86_64-unknown-linux-gnu.tar.bz2  mlibclang-8.0.0-x86_64-unknown-linux-gnu.tar.bz2
+wget  https://dl.bintray.com/micbou/libclang/libclang-8.0.0-x86_64-unknown-linux-gnu.tar.bz2
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;See &lt;a href=&#34;https://blog.csdn.net/u014520797/article/details/88734788&#34;&gt;CMake Error at ycm/CMakeLists.txt:107 (file): file DOWNLOAD HASH mismatch&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 &lt;ul&gt;
@@ -128,80 +132,6 @@ todo
 &lt;li&gt;&lt;a href=&#34;http://kbroman.org/minimal_make/&#34;&gt;A minimal tutorial on make&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://victoria.dev/blog/a-portable-makefile-for-continuous-delivery-with-hugo-and-github-pages/&#34;&gt;A portable Makefile for continuous delivery with Hugo and GitHub Pages&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://robjhyndman.com/hyndsight/makefiles/&#34;&gt;Makefiles for R/LaTeX projects&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>5 easy steps to start editing jupyter notebooks over SSH</title>
-      <link>/post/5-easy-steps-to-start-editing-jupyter-notebooks-over-ssh/</link>
-      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/post/5-easy-steps-to-start-editing-jupyter-notebooks-over-ssh/</guid>
-      <description>
-
-&lt;h2 id=&#34;host&#34;&gt;Host&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;python&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt; from notebook.auth import passwd
-&amp;gt;&amp;gt; passwd()
-Enter password:
-Verify password:
-&#39;sha1:673a8456a8e8:4377bd9ee8dc33d4cb5a2011f7a89643de15c11c&#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;.jupyter-config.py&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# vi .jupyter-config.py
-c.NotebookApp.ip = &#39;localhost&#39;
-c.NotebookApp.open_browser = False
-c.NotebookApp.port = 8081
-c.NotebookApp.password =u&#39;sha1:c0792e86dce2:e6fe5ee529a238b0dc33f4f1960499d6fbd02927&#39;     
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;start jupyter notebook&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;nohup jupyter notebook --config=.jupyter-config.py &amp;gt;&amp;gt; nohup.out &amp;amp;!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;client&#34;&gt;Client&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh -N -f -L 127.0.0.1:8888:127.0.0.1:8081 chencanyi2018@10.224.255.112 -p 5102 # Node A
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&amp;lt;!&amp;mdash;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;-N&lt;/code&gt;：不执行任何命令&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;-f&lt;/code&gt;：后台运行&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;-L&lt;/code&gt;：转发端口&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;-vvv&lt;/code&gt;：调试
-&amp;mdash;&amp;gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;jump-clients&#34;&gt;Jump Clients&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install autossh
-autossh -N -f -L 127.0.0.1:8888:127.0.0.1:8081 chencanyi2018@10.0.0.2 -p 22 # Node B
-ssh -N -f -L 127.0.0.1:8887:127.0.0.1:8888 chencanyi2018@116.196.81.58 -p 22 # Node C
-cat .zshrc
-# alias jupyter_gpu=&amp;quot;ssh -N -f -L 127.0.0.1:8887:127.0.0.1:8888 chencanyi2018@116.196.81.58 -p 22&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;kill-nohup&#34;&gt;kill nohup&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ps -eaf | grep &amp;quot;jupyter&amp;quot; | grep -v grep | awk &#39;{ print $2 }&#39; | xargs kill -9
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/handavy/article/details/83503323&#34;&gt;https://blog.csdn.net/handavy/article/details/83503323&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.looklinux.com/grep-find-process-id-and-kill-it-in-linuxunix/&#34;&gt;https://www.looklinux.com/grep-find-process-id-and-kill-it-in-linuxunix/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.unix.com/shell-programming-and-scripting/267304-kill-nohup-process-changing-pid.html&#34;&gt;https://www.unix.com/shell-programming-and-scripting/267304-kill-nohup-process-changing-pid.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -249,7 +179,7 @@ cat .zshrc
 plot(x,sin(x))
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;./post/2020-01-03-writing-content-with-markdown-latex-and-shortcodes_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-01-03-writing-content-with-markdown-latex-and-shortcodes_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 
@@ -398,24 +328,6 @@ Three
 &lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://spectrum.chat/academic&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/terms/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
