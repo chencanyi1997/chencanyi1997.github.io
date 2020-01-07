@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>devtools | Chen Canyi&#39;s blog</title>
+    <link>/tags/devtools/</link>
+      <atom:link href="/tags/devtools/index.xml" rel="self" type="application/rss+xml" />
+    <description>devtools</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 05 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>devtools</title>
+      <link>/tags/devtools/</link>
+    </image>
+    
+    <item>
+      <title>Build R packages with devtools</title>
+      <link>/post/build-r-packages-with-devtools/</link>
+      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/build-r-packages-with-devtools/</guid>
+      <description>&lt;p&gt;This post mainly follows &lt;a href=&#34;https://r-pkgs.org/whole-game.html&#34;&gt;The whole game&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://r-pkgs.org/&#34;&gt;R packages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

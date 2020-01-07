@@ -19,7 +19,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-01-05T01:01:46+08:00</lastmod>
+    <lastmod>2020-01-07T16:58:05+08:00</lastmod>
   </url>
   
   <url>
@@ -28,28 +28,68 @@
   </url>
   
   <url>
+    <loc>/tags/emacs/</loc>
+    <lastmod>2020-01-07T16:58:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/hello-from-emacs/</loc>
+    <lastmod>2020-01-07T16:58:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-01-07T16:58:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/build-r-packages-with-devtools/</loc>
+    <lastmod>2020-01-05T17:33:04+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/devtools/</loc>
+    <lastmod>2020-01-05T17:33:04+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r-packages/</loc>
+    <lastmod>2020-01-05T17:33:04+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/vim-plugin-youcompleteme/</loc>
-    <lastmod>2020-01-05T01:01:46+08:00</lastmod>
+    <lastmod>2020-01-05T17:30:47+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/blog/</loc>
-    <lastmod>2020-01-04T15:33:17+08:00</lastmod>
+    <lastmod>2020-01-05T17:30:47+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-01-04T15:33:17+08:00</lastmod>
+    <lastmod>2020-01-05T17:30:47+08:00</lastmod>
   </url>
   
   <url>
     <loc>/post/intro-to-make/</loc>
-    <lastmod>2020-01-04T15:33:17+08:00</lastmod>
+    <lastmod>2020-01-05T17:30:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/5-easy-steps-to-start-editing-jupyter-notebooks-over-ssh/</loc>
+    <lastmod>2020-01-05T17:30:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/jupyter/</loc>
+    <lastmod>2020-01-05T17:30:47+08:00</lastmod>
   </url>
   
   <url>
     <loc>/post/writing-content-with-markdown-latex-and-shortcodes/</loc>
-    <lastmod>2020-01-03T20:54:21+08:00</lastmod>
+    <lastmod>2020-01-05T17:30:47+08:00</lastmod>
   </url>
   
   <url>
@@ -83,17 +123,22 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-01-02T20:37:10+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/slides/</loc>
     <lastmod>2020-01-02T20:37:10+08:00</lastmod>
   </url>
   
   <url>
     <loc>/slides/example/</loc>
+    <lastmod>2020-01-02T20:37:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/privacy/</loc>
+    <lastmod>2020-01-02T20:37:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/terms/</loc>
     <lastmod>2020-01-02T20:37:10+08:00</lastmod>
   </url>
   
