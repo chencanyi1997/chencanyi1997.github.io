@@ -33,7 +33,14 @@ Click on the &lt;strong>Slides&lt;/strong> button above to view the built-in sli
 &lt;li>&lt;strong>Upload&lt;/strong> an existing slide deck to &lt;code>static/&lt;/code> and link using &lt;code>url_slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
 &lt;li>&lt;strong>Embed&lt;/strong> your slides (e.g. Google Slides) or presentation video on this page using &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">shortcodes&lt;/a>.&lt;/li>
 &lt;/ul>
-&lt;p>Further talk details can easily be added to this page using &lt;em>Markdown&lt;/em> and $\rm \LaTeX$ math code.&lt;/p></description></item><item><title>Hello from emacs</title><link>/post/hello-from-emacs/</link><pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate><guid>/post/hello-from-emacs/</guid><description>&lt;h2 id="some-useful-shortcuts">Some useful shortcuts&lt;/h2>
+&lt;p>Further talk details can easily be added to this page using &lt;em>Markdown&lt;/em> and $\rm \LaTeX$ math code.&lt;/p></description></item><item><title>Git Cheatshet</title><link>/post/git-cheatshet/</link><pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate><guid>/post/git-cheatshet/</guid><description>&lt;h2 id="how-to-push-your-local-repository-to-the-remote-repository-forcely">How to push your local repository to the remote repository forcely?&lt;/h2>
+&lt;pre>&lt;code class="language-bash">git remote add origin git@github.com:/.git
+git push -f -u origin master
+&lt;/code>&lt;/pre>
+&lt;h2 id="references">References&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.jianshu.com/p/567e8f24cdef">https://www.jianshu.com/p/567e8f24cdef&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Hello from emacs</title><link>/post/hello-from-emacs/</link><pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate><guid>/post/hello-from-emacs/</guid><description>&lt;h2 id="some-useful-shortcuts">Some useful shortcuts&lt;/h2>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;code>c-h c-h&lt;/code>: help&lt;/p>
