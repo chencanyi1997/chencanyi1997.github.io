@@ -1,29 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>R packages | Chen Canyi&#39;s blog</title>
-    <link>/tags/r-packages/</link>
-      <atom:link href="/tags/r-packages/index.xml" rel="self" type="application/rss+xml" />
-    <description>R packages</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 05 Jan 2020 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>R packages</title>
-      <link>/tags/r-packages/</link>
-    </image>
-    
-    <item>
-      <title>Build R packages with devtools</title>
-      <link>/post/build-r-packages-with-devtools/</link>
-      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/post/build-r-packages-with-devtools/</guid>
-      <description>&lt;p&gt;This post mainly follows &lt;a href=&#34;https://r-pkgs.org/whole-game.html&#34;&gt;The whole game&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://r-pkgs.org/&#34;&gt;R packages&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>R packages | Chen Canyi's blog</title><link>/tags/r-packages/</link><atom:link href="/tags/r-packages/index.xml" rel="self" type="application/rss+xml"/><description>R packages</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 05 Jan 2020 00:00:00 +0000</lastBuildDate><image><url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url><title>R packages</title><link>/tags/r-packages/</link></image><item><title>Build R packages with devtools</title><link>/post/build-r-packages-with-devtools/</link><pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate><guid>/post/build-r-packages-with-devtools/</guid><description>&lt;p>This post mainly follows &lt;a href="https://r-pkgs.org/whole-game.html">The whole game&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>Load Preliminaries&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code class="language-r">library(devtools)
+&lt;/code>&lt;/pre>
+&lt;ul>
+&lt;li>Create Package&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code class="language-r">create_package(&amp;quot;~/path/to/PACKAGENAME&amp;quot;)
+&lt;/code>&lt;/pre>
+&lt;ul>
+&lt;li>&lt;code>use_git()&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code class="language-r"># Initial set up
+git config --global user.name &amp;quot;YOUR FULL NAME&amp;quot;
+git config --global user.email &amp;quot;YOUR EMAIL ADDRESS&amp;quot;
+use_git()
+&lt;/code>&lt;/pre>
+&lt;ul>
+&lt;li>&lt;code>use_r()&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code class="language-r">use_r('gen_data')
+&lt;/code>&lt;/pre>
+&lt;ul>
+&lt;li>&lt;code>use_package()&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="references">References&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://r-pkgs.org/">R packages&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
