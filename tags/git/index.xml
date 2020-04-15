@@ -1,8 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>git | Chen Canyi's blog</title><link>/tags/git/</link><atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml"/><description>git</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate><image><url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url><title>git</title><link>/tags/git/</link></image><item><title>Git Cheatshet</title><link>/post/git-cheatshet/</link><pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate><guid>/post/git-cheatshet/</guid><description>&lt;h3 id="how-to-push-your-local-repository-to-the-remote-repository-forcely">How to push your local repository to the remote repository forcely?&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>git | Chen Canyi's blog</title><link>/tags/git/</link><atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml"/><description>git</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate><image><url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url><title>git</title><link>/tags/git/</link></image><item><title>Git Cheatshet</title><link>/post/git-cheatshet/</link><pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate><guid>/post/git-cheatshet/</guid><description>&lt;h2 id="how-to-push-your-local-repository-to-the-remote-repository-forcely">How to push your local repository to the remote repository forcely?&lt;/h2>
 &lt;pre>&lt;code class="language-bash">git remote add origin git@github.com:/.git
 git push -f -u origin master
 &lt;/code>&lt;/pre>
-&lt;h3 id="references">References&lt;/h3>
+&lt;h2 id="how-to-split-the-branch-for-your-git-repositories">How to split the branch for your git repositories?&lt;/h2>
+&lt;pre>&lt;code class="language-bash">## Create branch
+git branch &amp;lt;branchname&amp;gt;
+## Delete branch
+git branch -d &amp;lt;branchname&amp;gt;
+## Switch branch
+git checkout &amp;lt;branchname&amp;gt;
+## Merge multiple branches
+git merge
+&lt;/code>&lt;/pre>
+&lt;h2 id="references">References&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://www.jianshu.com/p/567e8f24cdef">https://www.jianshu.com/p/567e8f24cdef&lt;/a>&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.jianshu.com/p/567e8f24cdef">https://www.jianshu.com/p/567e8f24cdef&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.runoob.com/git/git-branch.html">Branch Management in Git&lt;/a>&lt;/p>
+&lt;/li>
 &lt;/ul></description></item></channel></rss>
